@@ -1,0 +1,51 @@
+<html>
+
+	<head>
+				
+		<title>Memory Game</title>
+		<meta charset="utf-8">
+		
+		<link href="css/normalize.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		
+		<script language="javascript" type="text/javascript">
+			function OnLoad() {
+				var paramValue = window.location.href.split("?")[1].split("=")[1];
+				document.getElementById("victory-points").innerHTML = paramValue + "!";
+			}
+			
+			function SoundVictory() {
+				var audio = new Audio(); // Создаём новый элемент Audio
+				audio.src = 'sounds/victory.mp3'; // Указываем путь к звуку "победы"
+				audio.autoplay = true; // Автоматически запускаем
+			}
+			
+			SoundVictory();
+		</script>
+		
+	</head>
+		
+		
+	<body onload="OnLoad()">
+	
+		<div id="victory-screen">	
+			
+			<div class="end-game">
+				<img src="img/Group 2.png">
+			</div>
+			
+			<div class = "victory-text">
+				<p>Поздравляем!</p></br>
+			
+				<p>Ваш итоговый счет:&nbsp</p>
+				<div id="victory-points"></div>
+				
+			</div>
+		
+			<a href="memory-game.html" id ="again-game-btn" data-tid="EndGame-retryGame">Еще раз</a>
+		
+		</div>		
+		
+	</body>
+
+</html>

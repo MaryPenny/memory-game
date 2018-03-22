@@ -1,0 +1,132 @@
+/*General Styles*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: #1C7230;
+	font-family: 'Open Sans', sans-serif;
+	color: #ddeae0;
+	font-size: 16px;
+	cursor: default;
+}
+
+a {
+	color: #ddeae0;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+img {
+	vertical-align: middle;
+    border-style: none;
+	width: 106px;
+ 	height: 146px;
+	margin: 15px; 
+	cursor: pointer;
+}
+
+
+/* Main screen, Victory screen */
+
+#main-screen, #victory-screen {
+	text-align: center;
+}
+
+#main-screen .start-game, #victory-screen .end-game {
+	margin-top: 44px;
+}
+
+.start-game img, .end-game img {
+	width: 500px;
+	height: 256px;
+	cursor: default;
+}
+
+#main-screen .start-logo, #victory-screen .victory-text {
+	margin-top: 46px;
+	margin-bottom: 56px;
+}
+
+#main-screen .start-logo h1, #victory-points {
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #ddeae0;
+	letter-spacing: 0.2px;
+	line-height: 42px;
+}
+
+#main-screen a, #victory-screen a {
+	color: #1c7430;
+	background: #ddeae0;
+	font-weight: bold;
+	padding: 18px 44px;
+	border-radius: 5px;
+	letter-spacing: 0.2px;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#main-screen a:hover, #victory-screen a:hover {
+	background: #1C7230;
+	color: #ddeae0;
+	border: 4px solid #ddeae0;	
+}
+
+#victory-screen .victory-text p {
+	font-size: 28px;
+	letter-spacing: 0.2px;
+	line-height: 42px;
+	margin: 0 auto;
+}
+
+
+/* Game table*/
+
+.container {
+	width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+	margin: 0 auto;
+	empty-cells: show;
+}
+ 
+ 
+ #game-table {
+	margin-top: 20px;
+ }
+ 
+ .new {
+	 float: left;
+	 margin-left: 20%;
+ }
+ 
+ #points-form {
+	 float:right;
+	 margin-right: 23%;
+ }
+ 
+ #points-form span {
+	 float: left;
+ }
+ 
+ #sum-points {
+	 float: right;
+ }
+ 
+ td {
+
+	width: 136px;
+ 	height: 176px;
+}
+
+
+
